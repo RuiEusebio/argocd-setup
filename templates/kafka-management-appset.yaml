@@ -5,7 +5,7 @@ metadata:
   name: kafka-topics
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: "5"
+    argocd.argoproj.io/sync-wave: "11"
 spec:
   generators:
   - git:

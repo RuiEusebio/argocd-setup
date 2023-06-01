@@ -6,6 +6,8 @@ metadata:
   namespace: argocd
   labels:
     kn: "knite-1"
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"    
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -18,9 +20,9 @@ spec:
     repoURL: https://github.com/RuiEusebio/eks-externaldns
     targetRevision: HEAD
   syncPolicy:
-    # automated:
-    #   prune: true
-    #   selfHeal: true
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
       - CreateNamespace=true 
 {{ end }}      

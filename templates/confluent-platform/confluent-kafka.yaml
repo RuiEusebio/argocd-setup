@@ -5,7 +5,7 @@ metadata:
   name: confluent-kafka
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "6"
   labels:
     kn: "knite-1"
   finalizers:
